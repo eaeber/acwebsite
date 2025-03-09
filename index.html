@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Fonts replace later with local file -->
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Test</title>
-    <link rel="stylesheet" href="/src/style.css">
+    <title>Alejandra Rodriguez</title>
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <link rel="preload" href="/src/components/nav.html" as="fetch" crossorigin="anonymous">
+    <script type="module" src="/src/main.js" defer></script>
+    <script type="module" src="/src/js/SPA.js"></script>
+    <script type="module" src="/src/js/nav.js"></script>
 </head>
-<body class="bg-gray-200 text-center p-10">
-    <h1 class="text-4xl font-bold text-blue-500">Tailwind is Working!</h1>
-    <p class="text-lg text-gray-700 mt-4">If this text is styled, Tailwind is active.</p>
+<body class="bg-[#d4d7ff]">
+    <div id="nav-container"></div>
+    <div id="app"></div>
 </body>
 </html>
