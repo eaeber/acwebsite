@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
 .active-link {
-    @apply text-5xl font-normal;
+    @apply font-extrabold;
 }
