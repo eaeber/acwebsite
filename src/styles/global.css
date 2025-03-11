@@ -3,3 +3,19 @@
 .active-link {
     @apply font-extrabold;
 }
+
+@font-face {
+    font-family: 'DarkerGrotesque';
+    src: url('../assets/fonts/DarkerGrotesque.woff2');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'ArchivoBlack';
+    src: url('../assets/fonts/ArchivoBlack.woff2');
+}
+
+@theme {
+    --font-darkerGrotesque: "DarkerGrotesque";
+    --font-archivoBlack: "ArchivoBlack";
+}

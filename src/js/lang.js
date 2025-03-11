@@ -20,6 +20,7 @@ function getBrowserLanguage() {
 
 function setLanguage(lang) {
     //TODO set lang
+    
     console.log("TODO: SETTING LANG TO: ", lang)
 }
 

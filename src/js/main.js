@@ -3,7 +3,7 @@ import { initializeLanguage } from "/src/js/lang.js";
 
 // load navigation
 function loadNav() {
-    fetch("/src/components/nav.html")
+    fetch("/components/nav.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("nav-container").innerHTML = html;
