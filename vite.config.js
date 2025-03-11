@@ -7,13 +7,7 @@ export default defineConfig({
     brotliSize: false,
   },
   plugins: [
-    tailwindcss(),
-    viteStaticCopy({
-      targets: [
-          { src: 'src/pages/*.html', dest: 'src/pages' },
-
-      ]
-  })
+    tailwindcss()
 
   ],
   server: {

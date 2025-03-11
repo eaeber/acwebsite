@@ -1,7 +1,7 @@
 const routes = {
-    "/": "/src/pages/home.html",
-    "/about": "/src/pages/about.html",
-    "/contact": "/src/pages/contact.html",
+    "/": "/assets/pages/home.html",
+    "/about": "/assets/pages/about.html",
+    "/contact": "/assets/pages/contact.html",
 };
 
 // Function to load content dynamically
