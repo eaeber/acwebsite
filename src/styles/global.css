@@ -6,9 +6,22 @@
 
 @font-face {
     font-family: 'DarkerGrotesque';
-    src: url('../assets/fonts/DarkerGrotesque.woff2');
-    font-weight: normal;
+    src: url('../assets/fonts/DarkerGrotesque/DarkerGrotesque.woff2');
+    font-weight: 400;
 }
+
+@font-face {
+    font-family: 'DarkerGrotesque';
+    src: url('../assets/fonts/DarkerGrotesque/DarkerGrotesque-SemiBold.woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'DarkerGrotesque';
+    src: url('../assets/fonts/DarkerGrotesque/DarkerGrotesque-Medium.woff2');
+    font-weight: 500;
+}
+
 
 @font-face {
     font-family: 'ArchivoBlack';
@@ -18,4 +31,19 @@
 @theme {
     --font-darkerGrotesque: "DarkerGrotesque";
     --font-archivoBlack: "ArchivoBlack";
+
+    --color-standard: #37210b;
 }
+.swiper-slide-active {
+    opacity: 1 !important
+}
+
+
+.swiper-button-prev::after {
+    @apply text-black
+}
+
+.swiper-button-next::after {
+    @apply text-black
+}
+

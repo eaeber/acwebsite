@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="preload" href="/assets/pages/home.html" as="fetch">
+    <link rel="preload" href="/assets/pages/home.html" as="fetch" crossorigin="anonymous">
     <link rel="preload" href="/assets/components/nav.html" as="fetch" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,14 @@
     <script type="module" src="/src/js/SPA.js"></script>
     <script type="module" src="/src/js/nav.js"></script>
     <script type="module" src="/src/js/lang.js"></script>
-    <link rel="preload" href="/assets/pages/about.html" as="fetch">
-    <link rel="preload" href="/assets/pages/contact.html" as="fetch">
-    
+    <script type="module" src="/src/js/swiper.js"></script>
+    <link rel="preload" href="/assets/pages/about.html" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="/assets/pages/contact.html" as="fetch" crossorigin="anonymous">
+    <link rel="preload" as="image" href="/assets/images/DSC_1412.webp">
+    <!-- TODO: Preload all images-->
     
 </head>
-<body class="bg-[#ffdfde]">
+<body class="bg-[#ffdfde] text-standard font-darkerGrotesque font-medium">
     <div id="nav-container"></div>
     <div id="app"></div>
 </body>
