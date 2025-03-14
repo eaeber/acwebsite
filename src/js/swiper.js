@@ -23,7 +23,7 @@ document.addEventListener("projectLoad", () => {
 
 
     var swiperMain = new Swiper(".mainSwiper", {
-        slidesPerView: 1.1,
+        slidesPerView: "auto",
         centeredSlides: true,
         threshold: 10,
         loop: true,
@@ -36,6 +36,13 @@ document.addEventListener("projectLoad", () => {
         },
         thumbs: {
             swiper: swiperThumbs,
+        },
+
+        breakpoints: {
+            640: {
+                slidesPerView: 1.1,
+                spaceBetween: 15,
+            }
         }
     });
 
