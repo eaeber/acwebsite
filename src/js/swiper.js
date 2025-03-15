@@ -9,16 +9,16 @@ document.addEventListener("projectLoad", () => {
     Swiper.use([Navigation, Controller])
 
     var swiperThumbs = new Swiper(".thumbnailSwiper", {
-        slidesPerView: 3,
+        slidesPerView: 5,
         spaceBetween: 15,
         centeredSlides: true,
         initialSlide: 0,
-        
+
         threshold: 10,
-        loop: true,
+        loop: false,
         slideToClickedSlide: true,
-        
-        
+
+
     });
 
 
@@ -26,10 +26,10 @@ document.addEventListener("projectLoad", () => {
         slidesPerView: "auto",
         centeredSlides: true,
         threshold: 10,
-        loop: true,
+        loop: false,
         loopAdditionalSlides: 0,
         spaceBetween: 15,
-        
+
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -47,5 +47,11 @@ document.addEventListener("projectLoad", () => {
     });
 
     swiperMain.controller.control = swiperThumbs;
-    swiperThumbs.controller.control = swiperMain
+    swiperThumbs.controller.control = swiperMain;
+
+    swiperMain.params.controller.by = 'slide';
+    swiperThumbs.params.controller.by = 'slide';
+
+    swiperMain.update();
+    swiperThumbs.update();
 })
