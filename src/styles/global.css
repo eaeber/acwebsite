@@ -38,7 +38,6 @@
     opacity: 1 !important
 }
 
-
 .swiper-button-prev::after {
     @apply text-black
 }
@@ -47,3 +46,11 @@
     @apply text-black
 }
 
+@layer utilities {
+    .project-images {
+        @apply w-full h-auto transition-all duration-500 ease-in-out group-hover:blur-sm;
+    }
+    .project-images-titles {
+        @apply absolute inset-1 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 select-none;
+    }
+}
