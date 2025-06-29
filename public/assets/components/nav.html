@@ -1,5 +1,26 @@
 <header>
-    <div class="sm:fixed top-0 w-full left-0 h-[60px] sm:h-full sm:w-[3rem] flex sm:flex-col items-center justify-between bg-[#3c0505] xl:w-[4rem]">
+    <!-- 1) Hamburger button -->
+    <button id="hamburger" class="m-4 w-8 h-8 flex flex-col justify-between z-50" aria-label="Toggle navigation">
+        <span class="block h-1 bg-gray-100"></span>
+        <span class="block h-1 bg-gray-100"></span>
+        <span class="block h-1 bg-gray-100"></span>
+    </button>
+
+    <div id="menu"
+        class="fixed inset-0 bg-[#3c0505] bg-opacity-95 transform -translate-x-full transition-transform duration-300">
+        <nav class="flex flex-col items-center justify-center h-full space-y-8 text-2xl text-red-400">
+            <a href="/contact" class="hover:underline">Kontakt</a>
+            <a href="/" class="hover:underline">Projekte</a>
+            <a href="/about" class="hover:underline">Über mich</a>
+        </nav>
+    </div>
+
+
+
+
+    <!-- OLD SIDEBAR
+    <div
+        class="sm:fixed top-0 w-full left-0 h-[60px] sm:h-full sm:w-[3rem] flex sm:flex-col items-center justify-between bg-[#3c0505] xl:w-[4rem]">
         <nav
             class="flex flex-row gap-10.5 xl:text-[20px] sm:text-[15px] flex items-start justify-between sm:rotate-180 sm:[writing-mode:vertical-lr] w-full sm:h-full ml-[2rem] mr-[2rem] sm:mb-[5rem] sm:mt-[5rem]">
             <a href="/contact" class="nav-link w-fit leading-none self-center ">Kontakt</a>
@@ -7,8 +28,10 @@
             <a href="/about" class="nav-link w-fit leading-none self-center">Über mich</a>
         </nav>
     </div>
+    -->
 
-    <div class="hidden sm:flex flex  gap-2 text-[max(1.2vw,0.5rem)] pr-2 font-(Darker_Grotesque) justify-end pr-[2rem] pt-[2rem] ">
+    <div
+        class="hidden sm:flex flex  gap-2 text-[max(1.2vw,0.5rem)] pr-2 font-(Darker_Grotesque) justify-end pr-[2rem] pt-[2rem] ">
         <a id="lang-de" class="hover:underline">DE</a>
         <span>|</span>
         <a id="lang-en" class="hover:underline">EN</a>
